@@ -1,523 +1,321 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>RAR Transformación Estratégica — Lima, Perú</title>
-  <meta name="description" content="Firma boutique de optimización empresarial. Estrategia, excelencia operacional e inversiones de capital en Latinoamérica."/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAR Transformación Estratégica — Consultoría Operacional</title>
+  <meta name="description" content="Encontramos y hacemos realidad el valor potencial de su empresa. Diagnóstico financiero-operacional en semanas, con impacto cuantificado en USD.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rar.pe">
+
+  <meta property="og:title" content="RAR Transformación Estratégica">
+  <meta property="og:description" content="Encontramos y hacemos realidad el valor potencial de su empresa.">
+  <meta property="og:url" content="https://rar.pe">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="caoUzvow33Zzy6rd3mMfgg" async></script>
-  <style>
-    :root{
-      --dark:   #1C2B3A;
-      --mid:    #2A3D52;
-      --light:  #3A5068;
-      --gold:   #B8962A;
-      --gold-lt:#D4AE3C;
-      --white:  #FFFFFF;
-      --off:    #F3F5F7;
-      --txt:    #1C2B3A;
-      --tmid:   #3A4F62;
-      --tlt:    #7A90A3;
-      --border: #DDE3EA;
-    }
-    *{margin:0;padding:0;box-sizing:border-box;}
-    html{scroll-behavior:smooth;}
-    body{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--txt);background:var(--white);line-height:1.6;}
-    h1,h2,h3,h4{font-family:'Georgia',serif;font-weight:normal;}
-
-    [data-lang]{display:none;}
-    body.lang-es [data-lang="es"],body.lang-en [data-lang="en"]{display:revert;}
-    span[data-lang]{display:none;}
-    body.lang-es span[data-lang="es"],body.lang-en span[data-lang="en"]{display:inline;}
-
-    /* NAV */
-    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,43,58,.97);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;border-bottom:1px solid rgba(184,150,42,.2);}
-    .nav-logo{display:flex;align-items:baseline;gap:10px;text-decoration:none;}
-    .nav-logo-mark{font-family:'Georgia',serif;font-size:1.85rem;color:var(--white);letter-spacing:2px;}
-    .nav-logo-sub{font-size:.7rem;color:rgba(255,255,255,.45);letter-spacing:1.5px;text-transform:uppercase;}
-    .nav-right{display:flex;align-items:center;gap:18px;}
-    .nav-links{display:flex;gap:24px;list-style:none;}
-    .nav-links a{font-size:.8rem;color:rgba(255,255,255,.6);text-decoration:none;letter-spacing:.3px;transition:color .2s;}
-    .nav-links a:hover{color:var(--gold-lt);}
-    .lang-toggle{display:flex;border:1px solid rgba(255,255,255,.22);border-radius:3px;overflow:hidden;}
-    .lang-btn{padding:5px 11px;background:transparent;color:rgba(255,255,255,.5);border:none;cursor:pointer;font-size:.76rem;font-weight:700;transition:all .2s;}
-    .lang-btn.active{background:var(--gold);color:var(--white);}
-    .nav-cta{padding:9px 20px;background:var(--gold);color:var(--white);text-decoration:none;font-size:.8rem;font-weight:700;letter-spacing:.4px;border-radius:3px;transition:background .2s;white-space:nowrap;}
-    .nav-cta:hover{background:var(--gold-lt);}
-    @media(max-width:900px){.nav-links{display:none;}.nav-logo-sub{display:none;}}
-    @media(max-width:600px){.nav-cta{display:none;}}
-
-    /* HERO */
-    .hero{min-height:100vh;background:linear-gradient(135deg,#111820 0%,#1C2B3A 50%,#2A3D52 100%);display:flex;align-items:center;padding:100px 5% 70px;position:relative;overflow:hidden;}
-    .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(184,150,42,.07) 0%,transparent 60%);pointer-events:none;}
-    .hero-content{position:relative;max-width:660px;}
-    .hero-eyebrow{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-lt);margin-bottom:24px;}
-    .hero h1{font-size:clamp(2rem,4.5vw,3.3rem);color:var(--white);line-height:1.2;margin-bottom:22px;}
-    .hero h1 em{font-style:normal;color:var(--gold-lt);}
-    .hero-sub{font-size:1.05rem;color:rgba(255,255,255,.7);max-width:540px;margin-bottom:18px;line-height:1.75;}
-    .hero-trust{display:flex;align-items:flex-start;background:rgba(255,255,255,.06);border-left:3px solid var(--gold);padding:12px 16px;margin-bottom:36px;max-width:520px;}
-    .hero-trust p{font-size:.85rem;color:rgba(255,255,255,.72);line-height:1.6;}
-    .hero-trust strong{color:var(--white);}
-    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
-    .btn-primary{padding:13px 30px;background:var(--gold);color:var(--white);text-decoration:none;font-weight:700;font-size:.88rem;border-radius:3px;transition:background .2s;}
-    .btn-primary:hover{background:var(--gold-lt);}
-    .btn-ghost{padding:13px 30px;background:transparent;color:var(--white);text-decoration:none;font-weight:500;font-size:.88rem;border:1px solid rgba(255,255,255,.3);border-radius:3px;transition:all .2s;}
-    .btn-ghost:hover{border-color:var(--gold-lt);color:var(--gold-lt);}
-    .hero-stats{position:absolute;right:5%;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:20px;}
-    .hero-stat{background:rgba(255,255,255,.055);border:1px solid rgba(184,150,42,.25);border-left:3px solid var(--gold);padding:14px 20px;min-width:210px;}
-    .hero-stat-num{font-family:'Georgia',serif;font-size:1.7rem;color:var(--gold-lt);line-height:1;margin-bottom:4px;}
-    .hero-stat-lbl{font-size:.76rem;color:rgba(255,255,255,.52);line-height:1.45;}
-    @media(max-width:1000px){.hero-stats{display:none;}.hero-content{max-width:100%;}}
-
-    /* SECTIONS */
-    section{padding:84px 5%;}
-    .sec-label{font-size:.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
-    .sec-title{font-size:clamp(1.7rem,2.8vw,2.4rem);color:var(--dark);line-height:1.25;margin-bottom:18px;}
-    .sec-intro{font-size:1rem;color:var(--tmid);max-width:640px;line-height:1.8;margin-bottom:52px;}
-
-    /* SECTOR STRIP */
-    .sectors-strip{background:var(--dark);padding:28px 5%;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;}
-    .sector-item{display:flex;flex-direction:column;align-items:center;gap:7px;padding:18px 32px;border-right:1px solid rgba(255,255,255,.08);cursor:default;transition:background .2s;}
-    .sector-item:last-child{border-right:none;}
-    .sector-item:hover{background:rgba(255,255,255,.05);}
-    .sector-icon{font-size:1.5rem;}
-    .sector-name{font-size:.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.58);}
-    @media(max-width:700px){.sector-item{padding:14px 18px;}}
-
-    /* PROBLEM */
-    #problema{background:var(--dark);}
-    #problema .sec-label{color:var(--gold-lt);}
-    #problema .sec-title{color:var(--white);}
-    #problema .sec-intro{color:rgba(255,255,255,.6);}
-    .erosion-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:2px;}
-    .erosion-card{background:rgba(255,255,255,.04);border-top:3px solid var(--gold);padding:32px 28px;transition:background .2s;}
-    .erosion-card:hover{background:rgba(255,255,255,.07);}
-    .erosion-num{font-family:'Georgia',serif;font-size:2.8rem;color:var(--gold-lt);line-height:1;margin-bottom:10px;}
-    .erosion-ttl{font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:8px;}
-    .erosion-desc{font-size:.85rem;color:rgba(255,255,255,.54);line-height:1.65;}
-
-    /* SERVICES */
-    #servicios{background:var(--off);}
-    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;}
-    .svc-card{background:var(--white);border:1px solid var(--border);border-top:4px solid var(--mid);padding:36px 32px;transition:transform .2s,box-shadow .2s;}
-    .svc-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(28,43,58,.1);}
-    .svc-icon{width:44px;height:44px;background:var(--mid);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:1.2rem;}
-    .svc-name{font-family:'Georgia',serif;font-size:1.25rem;color:var(--dark);margin-bottom:12px;}
-    .svc-desc{font-size:.88rem;color:var(--tmid);line-height:1.72;margin-bottom:22px;}
-    .svc-impacts{list-style:none;margin-bottom:24px;}
-    .svc-impacts li{font-size:.83rem;color:var(--tmid);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:baseline;gap:9px;}
-    .svc-impacts li:last-child{border-bottom:none;}
-    .svc-impacts li::before{content:'';width:16px;height:2px;background:var(--gold);flex-shrink:0;position:relative;top:-1px;}
-    .hl{color:var(--gold);font-weight:700;}
-    .svc-ref{background:var(--off);border-left:3px solid var(--gold);padding:12px 16px;font-size:.82rem;color:var(--tmid);line-height:1.6;}
-    .svc-ref strong{color:var(--dark);}
-
-    /* WHY US */
-    #nosotros{background:var(--white);}
-    .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:36px;}
-    .why-card{padding-left:22px;border-left:3px solid var(--gold);}
-    .why-ttl{font-family:'Georgia',serif;font-size:1.15rem;color:var(--dark);margin-bottom:10px;}
-    .why-desc{font-size:.88rem;color:var(--tmid);line-height:1.78;}
-    .why-desc strong{color:var(--dark);}
-
-    /* TEAM */
-    #equipo{background:var(--off);}
-    .team-wrap{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:start;}
-    @media(max-width:820px){.team-wrap{grid-template-columns:1fr;gap:32px;}}
-    .team-photo-wrap{text-align:center;}
-    .team-photo{width:180px;height:180px;border-radius:50%;object-fit:cover;object-position:top center;border:4px solid var(--gold);display:block;margin:0 auto 20px;}
-    .team-photo-fallback{width:180px;height:180px;border-radius:50%;background:var(--mid);border:4px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Georgia',serif;font-size:2.8rem;color:var(--white);margin:0 auto 20px;}
-    .team-name-lg{font-family:'Georgia',serif;font-size:1.35rem;color:var(--dark);margin-bottom:4px;}
-    .team-role-lg{font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
-    .team-contact-links a{display:block;font-size:.84rem;color:var(--tmid);text-decoration:none;margin-bottom:5px;transition:color .2s;}
-    .team-contact-links a:hover{color:var(--gold);}
-    .team-badges{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px;justify-content:center;}
-    .tbadge{font-size:.7rem;font-weight:700;color:var(--dark);background:rgba(28,43,58,.06);border:1px solid var(--border);padding:4px 9px;border-radius:2px;}
-    .team-bio{font-size:.95rem;color:var(--tmid);line-height:1.82;margin-bottom:32px;}
-    .team-bio strong{color:var(--dark);}
-    .team-highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:2px;}
-    .team-hl-card{background:var(--dark);padding:22px 20px;text-align:center;}
-    .team-hl-num{font-family:'Georgia',serif;font-size:1.8rem;color:var(--gold-lt);line-height:1;margin-bottom:6px;}
-    .team-hl-lbl{font-size:.76rem;color:rgba(255,255,255,.6);line-height:1.4;}
-
-    /* HOW TO START */
-    #empezar{background:var(--dark);}
-    #empezar .sec-label{color:var(--gold-lt);}
-    #empezar .sec-title{color:var(--white);}
-    #empezar .sec-intro{color:rgba(255,255,255,.6);}
-    .start-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px;max-width:760px;}
-    .start-card{background:rgba(255,255,255,.04);border-top:3px solid var(--gold);padding:36px 30px;display:flex;flex-direction:column;}
-    .start-card.feat{background:rgba(184,150,42,.08);border-top-color:var(--gold-lt);}
-    .start-icon{font-size:1.7rem;margin-bottom:18px;}
-    .start-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-lt);background:rgba(184,150,42,.1);border:1px solid rgba(184,150,42,.3);padding:3px 9px;border-radius:2px;margin-bottom:12px;}
-    .start-name{font-family:'Georgia',serif;font-size:1.2rem;color:var(--white);margin-bottom:10px;}
-    .start-desc{font-size:.87rem;color:rgba(255,255,255,.62);line-height:1.72;flex-grow:1;margin-bottom:24px;}
-    .cta-solid{display:block;padding:12px 24px;background:var(--gold);color:var(--white);text-decoration:none;font-weight:700;font-size:.85rem;border-radius:3px;text-align:center;transition:background .2s;}
-    .cta-solid:hover{background:var(--gold-lt);}
-    .cta-outline{display:block;padding:12px 24px;background:transparent;color:var(--gold-lt);text-decoration:none;font-weight:700;font-size:.85rem;border:1px solid var(--gold);border-radius:3px;text-align:center;transition:all .2s;}
-    .cta-outline:hover{background:var(--gold);color:var(--white);}
-
-    /* CONTACT */
-    #contacto{background:var(--off);}
-    .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
-    @media(max-width:800px){.contact-wrap{grid-template-columns:1fr;gap:36px;}}
-    .contact-info p{font-size:.9rem;color:var(--tmid);line-height:1.8;margin-bottom:28px;}
-    .contact-detail{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
-    .contact-detail a{font-size:.9rem;color:var(--tmid);text-decoration:none;transition:color .2s;}
-    .contact-detail a:hover{color:var(--gold);}
-    .contact-person{font-family:'Georgia',serif;font-size:1.1rem;color:var(--dark);margin-bottom:2px;}
-    .contact-role{font-size:.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold);}
-    .contact-form{display:flex;flex-direction:column;gap:14px;}
-    .contact-form input,.contact-form textarea{background:var(--white);border:1px solid var(--border);color:var(--txt);font-family:'Helvetica Neue',sans-serif;font-size:.88rem;padding:13px 16px;border-radius:2px;outline:none;transition:border .2s;width:100%;}
-    .contact-form input:focus,.contact-form textarea:focus{border-color:var(--gold);}
-    .contact-form textarea{resize:vertical;min-height:110px;}
-    .contact-form button{padding:13px 28px;background:var(--mid);color:var(--white);border:none;cursor:pointer;font-weight:700;font-size:.88rem;border-radius:3px;transition:background .2s;align-self:flex-start;font-family:'Helvetica Neue',sans-serif;}
-    .contact-form button:hover{background:var(--dark);}
-
-    /* FOOTER */
-    footer{background:#0E1820;padding:36px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;border-top:1px solid rgba(255,255,255,.06);}
-    .footer-logo{font-family:'Georgia',serif;font-size:1.3rem;color:rgba(255,255,255,.4);letter-spacing:2px;}
-    .footer-copy,.footer-loc{font-size:.76rem;color:rgba(255,255,255,.22);}
-
-    @media(max-width:600px){section{padding:60px 4%;}.sectors-strip{padding:18px 4%;}.contact-form button{width:100%;}}
-  </style>
 </head>
-<body class="lang-es">
+<body>
 
-<!-- NAV -->
-<nav>
-  <a href="#inicio" class="nav-logo">
-    <span class="nav-logo-mark">RAR</span>
-    <span class="nav-logo-sub" data-lang="es">Transformación Estratégica</span>
-    <span class="nav-logo-sub" data-lang="en">Strategic Transformation</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#servicios" data-lang="es">Servicios</a><a href="#servicios" data-lang="en">Services</a></li>
-    <li><a href="#nosotros" data-lang="es">Por qué nosotros</a><a href="#nosotros" data-lang="en">Why us</a></li>
-    <li><a href="#equipo" data-lang="es">Equipo</a><a href="#equipo" data-lang="en">Team</a></li>
-    <li><a href="#empezar" data-lang="es">Cómo empezar</a><a href="#empezar" data-lang="en">Get started</a></li>
-    <li><a href="#contacto" data-lang="es">Contacto</a><a href="#contacto" data-lang="en">Contact</a></li>
-  </ul>
-  <div class="nav-right">
-    <div class="lang-toggle">
-      <button class="lang-btn active" onclick="setLang('es')">ES</button>
-      <button class="lang-btn" onclick="setLang('en')">EN</button>
-    </div>
-    <a href="https://bookings.cloud.microsoft/bookwithme/user/18c268b18dcc4351873da0a54e850f25%40rar.pe?anonymous&ismsaljsauthenabled" target="_blank" class="nav-cta">
-      <span data-lang="es">Agendar reunión</span><span data-lang="en">Book a meeting</span>
+  <!-- NAV -->
+  <nav class="nav" id="main-nav">
+    <a href="#" class="nav-logo">
+      <span class="nav-logo-rar">RAR</span>
+      <span class="nav-logo-sub">Transformación Estratégica</span>
     </a>
-  </div>
-</nav>
+    <ul class="nav-links">
+      <li><a href="#problema">El Problema</a></li>
+      <li><a href="#como">Cómo trabajamos</a></li>
+      <li><a href="#evidencia">Evidencia</a></li>
+    </ul>
+    <a href="#contacto" class="btn-nav">Conversemos →</a>
+  </nav>
 
-<!-- HERO -->
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <span class="hero-eyebrow" data-lang="es">Firma boutique · Optimización empresarial · LatAm</span>
-    <span class="hero-eyebrow" data-lang="en">Boutique firm · Business optimization · LatAm</span>
-    <h1 data-lang="es">El valor que <em>se pierde</em><br>en la ejecución,<br>lo convertimos en resultado.</h1>
-    <h1 data-lang="en">The value <em>lost</em><br>in execution,<br>we turn into results.</h1>
-    <p class="hero-sub" data-lang="es">Acompañamos a las empresas desde la estrategia hasta la operación — garantizando que las decisiones se traduzcan en mayor retorno, mejor uso del capital y crecimiento rentable.</p>
-    <p class="hero-sub" data-lang="en">We accompany companies from strategy to operations — ensuring decisions translate into higher returns, better capital use, and profitable growth.</p>
-    <div class="hero-trust" data-lang="es">
-      <p>Somos su <strong>socio de confianza en la implementación</strong>. No entregamos un reporte y nos vamos — acompañamos hasta que el resultado es verificable en los números.</p>
-    </div>
-    <div class="hero-trust" data-lang="en">
-      <p>We are your <strong>trusted implementation partner</strong>. We don't hand over a report and leave — we accompany until the result is verifiable in the numbers.</p>
-    </div>
-    <div class="hero-actions">
-      <a href="https://bookings.cloud.microsoft/bookwithme/user/18c268b18dcc4351873da0a54e850f25%40rar.pe?anonymous&ismsaljsauthenabled" target="_blank" class="btn-primary">
-        <span data-lang="es">Reunión de Claridad Directiva · 30 min</span>
-        <span data-lang="en">Executive Clarity Meeting · 30 min</span>
-      </a>
-      <a href="#servicios" class="btn-ghost">
-        <span data-lang="es">Qué hacemos</span><span data-lang="en">What we do</span>
-      </a>
-    </div>
-  </div>
-  <div class="hero-stats">
-    <div class="hero-stat">
-      <div class="hero-stat-num">USD 50MM+</div>
-      <div class="hero-stat-lbl" data-lang="es">en eficiencias identificadas<br>en LatAm</div>
-      <div class="hero-stat-lbl" data-lang="en">in efficiencies identified<br>across LatAm</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">+36%</div>
-      <div class="hero-stat-lbl" data-lang="es">mejora en eficiencia<br>de producción, oil &amp; gas</div>
-      <div class="hero-stat-lbl" data-lang="en">production efficiency<br>gain, oil &amp; gas</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">3 países</div>
-      <div class="hero-stat-lbl" data-lang="es">Perú · Brasil · Colombia<br>minería · energía · manufactura</div>
-      <div class="hero-stat-lbl" data-lang="en">Peru · Brazil · Colombia<br>mining · energy · manufacturing</div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTOR STRIP -->
-<div class="sectors-strip">
-  <div class="sector-item"><span class="sector-icon">⛏</span><span class="sector-name" data-lang="es">Minería</span><span class="sector-name" data-lang="en">Mining</span></div>
-  <div class="sector-item"><span class="sector-icon">🛢</span><span class="sector-name">Oil &amp; Gas</span></div>
-  <div class="sector-item"><span class="sector-icon">🏭</span><span class="sector-name" data-lang="es">Manufactura</span><span class="sector-name" data-lang="en">Manufacturing</span></div>
-  <div class="sector-item"><span class="sector-icon">🌾</span><span class="sector-name" data-lang="es">Agroindustria</span><span class="sector-name" data-lang="en">Agro-industry</span></div>
-  <div class="sector-item"><span class="sector-icon">🏗</span><span class="sector-name" data-lang="es">Infraestructura</span><span class="sector-name" data-lang="en">Infrastructure</span></div>
-  <div class="sector-item"><span class="sector-icon">🏢</span><span class="sector-name" data-lang="es">Servicios</span><span class="sector-name" data-lang="en">Services</span></div>
-</div>
-
-<!-- PROBLEM -->
-<section id="problema">
-  <p class="sec-label" data-lang="es">El problema</p><p class="sec-label" data-lang="en">The problem</p>
-  <h2 class="sec-title" data-lang="es">Su empresa vale más de lo que actualmente produce</h2>
-  <h2 class="sec-title" data-lang="en">Your company is worth more than it currently produces</h2>
-  <p class="sec-intro" data-lang="es">El valor se erosiona desde la estrategia hasta la ejecución. Tres fuentes concentran la mayor parte de la pérdida — y las tres son corregibles.</p>
-  <p class="sec-intro" data-lang="en">Value erodes from strategy all the way to execution. Three sources concentrate most of the loss — and all three are correctable.</p>
-  <div class="erosion-grid">
-    <div class="erosion-card">
-      <div class="erosion-num">−50%</div>
-      <div class="erosion-ttl" data-lang="es">Estrategia desalineada</div>
-      <div class="erosion-ttl" data-lang="en">Misaligned strategy</div>
-      <p class="erosion-desc" data-lang="es">Sin diferenciación real, el margen operativo puede ser hasta 50% menor que el promedio de la industria. Las empresas compiten por precio porque no articularon por qué deben existir.</p>
-      <p class="erosion-desc" data-lang="en">Without real differentiation, operating margins can be up to 50% below industry average. Companies compete on price because they haven't defined why they should exist.</p>
-    </div>
-    <div class="erosion-card">
-      <div class="erosion-num">35%</div>
-      <div class="erosion-ttl" data-lang="es">Operación deficiente</div>
-      <div class="erosion-ttl" data-lang="en">Operational waste</div>
-      <p class="erosion-desc" data-lang="es">Procesos diseñados para el pasado generan desperdicios de hasta 35% de sobrecosto. El capital operativo se diluye en actividades que no mueven la aguja.</p>
-      <p class="erosion-desc" data-lang="en">Processes designed for the past generate waste of up to 35% cost overrun. Operating capital is diluted in activities that don't move the needle.</p>
-    </div>
-    <div class="erosion-card">
-      <div class="erosion-num">29%</div>
-      <div class="erosion-ttl" data-lang="es">Inversiones mal gestionadas</div>
-      <div class="erosion-ttl" data-lang="en">Poorly managed investments</div>
-      <p class="erosion-desc" data-lang="es">El 92% de los proyectos de capital no cumplen sus compromisos iniciales. En promedio, las organizaciones gastan 29% más de lo planeado por falta de control y visibilidad.</p>
-      <p class="erosion-desc" data-lang="en">92% of capital projects fail to meet initial commitments. Organizations spend on average 29% more than planned due to lack of control and visibility.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="servicios">
-  <p class="sec-label" data-lang="es">Qué hacemos</p><p class="sec-label" data-lang="en">What we do</p>
-  <h2 class="sec-title" data-lang="es">Tres palancas de valor</h2>
-  <h2 class="sec-title" data-lang="en">Three value levers</h2>
-  <p class="sec-intro" data-lang="es">Acompañamos a las empresas en los tres frentes donde se concentra la pérdida de valor — con metodología estructurada, implementación real y resultados verificados en los estados financieros.</p>
-  <p class="sec-intro" data-lang="en">We accompany companies across the three fronts where value loss concentrates — with structured methodology, real implementation, and results verified on financial statements.</p>
-  <div class="services-grid">
-    <div class="svc-card">
-      <div class="svc-icon">♟</div>
-      <div class="svc-name" data-lang="es">Estrategia del Negocio</div>
-      <div class="svc-name" data-lang="en">Business Strategy</div>
-      <p class="svc-desc" data-lang="es">Desarrollamos e implementamos el planeamiento estratégico que permite a nuestros clientes alcanzar resultados tangibles — desde la definición del foco hasta la gobernanza de ejecución.</p>
-      <p class="svc-desc" data-lang="en">We develop and implement the strategic planning that allows our clients to achieve tangible results — from focus definition to execution governance.</p>
-      <ul class="svc-impacts">
-        <li data-lang="es">Propuesta de Valor diferenciada y reenfoque de segmentos</li>
-        <li data-lang="es">Roadmap de iniciativas con mayor retorno (NPV/CapEx)</li>
-        <li data-lang="es">Instalación de gobernanza comercial y métricas de seguimiento</li>
-        <li data-lang="en">Differentiated Value Proposition and segment refocus</li>
-        <li data-lang="en">High-return initiative roadmap (NPV/CapEx)</li>
-        <li data-lang="en">Commercial governance and tracking metrics</li>
-      </ul>
-      <div class="svc-ref" data-lang="es"><strong>Resultado garantizado:</strong> Roadmap para cerrar brecha de <span class="hl">USD 140MM</span> en organización de servicios.</div>
-      <div class="svc-ref" data-lang="en"><strong>Guaranteed result:</strong> Roadmap to close a <span class="hl">USD 140MM</span> gap in a services organization.</div>
-    </div>
-    <div class="svc-card">
-      <div class="svc-icon">⚙</div>
-      <div class="svc-name" data-lang="es">Excelencia Operacional</div>
-      <div class="svc-name" data-lang="en">Operational Excellence</div>
-      <p class="svc-desc" data-lang="es">Optimizamos los sistemas operativos y de gestión, y habilitamos la cultura organizacional adecuada. Lean aplicado donde importa, con resultados medibles en semanas — no en meses.</p>
-      <p class="svc-desc" data-lang="en">We optimize operational and management systems and enable the right organizational culture. Lean applied where it matters, with measurable results in weeks — not months.</p>
-      <ul class="svc-impacts">
-        <li><span class="hl">15–35%</span> <span data-lang="es">reducción en costos operativos totales</span><span data-lang="en">reduction in total operating costs</span></li>
-        <li><span class="hl">20–40%</span> <span data-lang="es">aumento de productividad por empleado</span><span data-lang="en">increase in productivity per employee</span></li>
-        <li data-lang="es">Costo de "mala calidad" reducido a menos del <span class="hl">5%</span></li>
-        <li data-lang="en">Poor-quality cost reduced to below <span class="hl">5%</span></li>
-      </ul>
-      <div class="svc-ref" data-lang="es"><strong>Resultado garantizado:</strong> <span class="hl">+36% anual</span> en eficiencia de producción de petróleo. <span class="hl">USD 50MM</span> de ahorro potencial en Perú, Brasil y Colombia.</div>
-      <div class="svc-ref" data-lang="en"><strong>Guaranteed result:</strong> <span class="hl">+36% annual</span> oil production efficiency. <span class="hl">USD 50MM</span> potential savings across Peru, Brazil, and Colombia.</div>
-    </div>
-    <div class="svc-card">
-      <div class="svc-icon">🏗</div>
-      <div class="svc-name" data-lang="es">Excelencia en Inversiones</div>
-      <div class="svc-name" data-lang="en">Investment Excellence</div>
-      <p class="svc-desc" data-lang="es">Mejoramos el retorno de las inversiones de capital desde la mirada de portafolio hasta la ejecución por proyecto. Garantizamos la promesa de retorno en fecha y costo.</p>
-      <p class="svc-desc" data-lang="en">We improve capital investment returns from portfolio view to individual project execution. We guarantee the return promise on time and on budget.</p>
-      <ul class="svc-impacts">
-        <li data-lang="es">Ranking NPV/CapEx para eliminar proyectos sin retorno real</li>
-        <li data-lang="es">Stress-test de alcance y especificaciones</li>
-        <li data-lang="es">Control de ejecución: puesta en marcha en fecha y costo</li>
-        <li data-lang="en">NPV/CapEx ranking to eliminate low-return projects</li>
-        <li data-lang="en">Scope and specification stress-testing</li>
-        <li data-lang="en">On-time, on-budget commissioning control</li>
-      </ul>
-      <div class="svc-ref" data-lang="es"><strong>Resultado garantizado:</strong> <span class="hl">USD 5MM (10%)</span> ahorros en CAPEX minero. <span class="hl">USD 80MM</span> en proyectos OXI. <span class="hl">USD 16MM</span> en infraestructura ejecutada.</div>
-      <div class="svc-ref" data-lang="en"><strong>Guaranteed result:</strong> <span class="hl">USD 5MM (10%)</span> savings on mining CAPEX. <span class="hl">USD 80MM</span> OXI projects. <span class="hl">USD 16MM</span> in executed infrastructure.</div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY US -->
-<section id="nosotros">
-  <p class="sec-label" data-lang="es">Por qué nosotros</p><p class="sec-label" data-lang="en">Why us</p>
-  <h2 class="sec-title" data-lang="es">Su socio de confianza en la implementación</h2>
-  <h2 class="sec-title" data-lang="en">Your trusted implementation partner</h2>
-  <p class="sec-intro" data-lang="es">No somos una firma de recomendaciones. Acompañamos a las empresas hasta que el cambio se consolida — y usted trabaja directamente con quien tiene la experiencia, sin intermediarios.</p>
-  <p class="sec-intro" data-lang="en">We are not a recommendations firm. We accompany companies until change consolidates — and you work directly with the person who has the experience, no intermediaries.</p>
-  <div class="why-grid">
-    <div class="why-card">
-      <div class="why-ttl" data-lang="es">Rigor analítico, acceso directo al socio</div>
-      <div class="why-ttl" data-lang="en">Analytical rigor, direct partner access</div>
-      <p class="why-desc" data-lang="es">Aplicamos metodología de primer nivel en transformación operativa y estratégica — con la agilidad y el acceso directo que solo una firma boutique puede dar. <strong>El proyecto lo lidera quien lo conoce.</strong></p>
-      <p class="why-desc" data-lang="en">We apply top-tier methodology in operational and strategic transformation — with the agility and direct access that only a boutique firm can provide. <strong>The project is led by the person who knows it.</strong></p>
-    </div>
-    <div class="why-card">
-      <div class="why-ttl" data-lang="es">Velocidad de captura de valor</div>
-      <div class="why-ttl" data-lang="en">Speed of value capture</div>
-      <p class="why-desc" data-lang="es">Priorizamos <strong>Quick Wins en las primeras semanas</strong> para que la transformación se autofinancie. Minimizamos el riesgo financiero del cliente desde el primer día — el resultado paga la inversión.</p>
-      <p class="why-desc" data-lang="en">We prioritize <strong>Quick Wins in the first weeks</strong> so the transformation funds itself. We minimize client financial risk from day one — the result pays for the investment.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-ttl" data-lang="es">Implementación hasta la última milla</div>
-      <div class="why-ttl" data-lang="en">Last-mile implementation</div>
-      <p class="why-desc" data-lang="es">Nuestra métrica de éxito es el <strong>ahorro verificado y la mejora del margen</strong> — no el entregable. Garantizamos la adopción del cambio donde la mayoría de las estrategias fallan: la ejecución.</p>
-      <p class="why-desc" data-lang="en">Our success metric is <strong>verified savings and margin improvement</strong> — not the deliverable. We guarantee change adoption where most strategies fail: execution.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-ttl" data-lang="es">Instalación de capacidades propias</div>
-      <div class="why-ttl" data-lang="en">Capability building for independence</div>
-      <p class="why-desc" data-lang="es">No creamos dependencia. <strong>Entrenamos a su equipo</strong> para que herede el control total del sistema y tenga el músculo operativo para sostener y escalar los resultados sin consultores.</p>
-      <p class="why-desc" data-lang="en">We don't create dependency. <strong>We train your team</strong> to inherit full system control and build the operational muscle to sustain and scale results without consultants.</p>
-    </div>
-  </div>
-</section>
-
-<!-- TEAM -->
-<section id="equipo">
-  <p class="sec-label" data-lang="es">Nuestro equipo</p><p class="sec-label" data-lang="en">Our team</p>
-  <h2 class="sec-title" data-lang="es">Experiencia que respalda los resultados</h2>
-  <h2 class="sec-title" data-lang="en">Experience that backs the results</h2>
-  <div class="team-wrap">
-    <div class="team-photo-wrap">
-      <img src="photo RR.png" alt="Raúl A. Rojas" class="team-photo"
-           onerror="this.style.display='none';document.getElementById('av').style.display='flex';"/>
-      <div class="team-photo-fallback" id="av" style="display:none;">RR</div>
-      <div class="team-name-lg">Raúl A. Rojas</div>
-      <div class="team-role-lg" data-lang="es">Socio Director</div>
-      <div class="team-role-lg" data-lang="en">Managing Partner</div>
-      <div class="team-contact-links">
-        <a href="mailto:contacto@rar.pe">contacto@rar.pe</a>
-        <a href="tel:+51983894157">+51 983 894 157</a>
-        <a href="https://www.linkedin.com/in/raulrojasrenteria" target="_blank">LinkedIn ↗</a>
+  <!-- HERO -->
+  <header>
+    <div class="hero">
+      <p class="hero-eyebrow">Consultoría de Transformación Operacional</p>
+      <h1 class="hero-h1">Encontramos y hacemos realidad el <em>valor potencial</em> de su empresa</h1>
+      <p class="hero-sub">Trabajamos con CEOs y dueños que saben que su empresa puede rendir más pero necesitan claridad para tomar decisiones estratégicas con confianza.</p>
+      <div class="hero-ctas">
+        <a href="https://bookings.cloud.microsoft/bookwithme/user/18c268b18dcc4351873da0a54e850f25%40rar.pe?anonymous&ismsaljsauthenabled" class="btn-primary" target="_blank" rel="noopener">Agenda una conversación →</a>
+        <a href="#evidencia" class="btn-text"><i class="ti ti-arrow-down-right"></i> Ver casos reales</a>
       </div>
-      <div class="team-badges">
-        <span class="tbadge">McKinsey Alumni</span>
-        <span class="tbadge">MBA · BYU Marriott</span>
-        <span class="tbadge" data-lang="es">Ing. Civil · UNI</span>
-        <span class="tbadge" data-lang="en">Civil Eng. · UNI</span>
-        <span class="tbadge">ES · EN · PT</span>
+
+      <div class="sectors-bar">
+        <span class="sectors-label">Sectores</span>
+        <div class="sectors-list">
+          <span>Manufactura</span>
+          <span class="sector-sep">·</span>
+          <span>Servicios Financieros</span>
+          <span class="sector-sep">·</span>
+          <span>Logística</span>
+          <span class="sector-sep">·</span>
+          <span>Infraestructura y Construcción</span>
+        </div>
       </div>
     </div>
-    <div>
-      <p class="team-bio" data-lang="es">Profesional de transformación estratégica e infraestructura con foco en implementación real y resultados verificados. Trayectoria en <strong>McKinsey &amp; Company</strong> liderando iniciativas de mejora operativa y eficiencia de capital en minería, energía, manufactura y agroindustria en LatAm — con más de <strong>USD 50 millones</strong> en eficiencias identificadas. Experiencia previa como PMO financista en proyectos de infraestructura pública por más de <strong>USD 60 millones</strong>, coordinando negociaciones complejas entre actores públicos y privados. MBA en Brigham Young University (Utah), Ingeniería Civil (UNI Lima), trilingüe (ES/EN/PT).</p>
-      <p class="team-bio" data-lang="en">Strategic transformation and infrastructure professional focused on real implementation and verified results. Track record at <strong>McKinsey &amp; Company</strong> leading operational improvement and capital efficiency initiatives across mining, energy, manufacturing, and agro-industry in LatAm — identifying over <strong>USD 50 million</strong> in efficiencies. Prior experience as financial PMO on public infrastructure projects exceeding <strong>USD 60 million</strong>, coordinating complex negotiations between public and private actors. MBA at Brigham Young University (Utah), Civil Engineering (UNI Lima), trilingual (ES/EN/PT).</p>
-      <div class="team-highlights">
-        <div class="team-hl-card"><div class="team-hl-num">USD 50MM+</div><div class="team-hl-lbl" data-lang="es">eficiencias identificadas<br>en LatAm</div><div class="team-hl-lbl" data-lang="en">efficiencies identified<br>across LatAm</div></div>
-        <div class="team-hl-card"><div class="team-hl-num">+36%</div><div class="team-hl-lbl" data-lang="es">mejora en eficiencia<br>de producción</div><div class="team-hl-lbl" data-lang="en">production efficiency<br>improvement</div></div>
-        <div class="team-hl-card"><div class="team-hl-num">USD 60MM+</div><div class="team-hl-lbl" data-lang="es">en infraestructura<br>pública gestionada</div><div class="team-hl-lbl" data-lang="en">in public infrastructure<br>projects managed</div></div>
-        <div class="team-hl-card"><div class="team-hl-num">5+</div><div class="team-hl-lbl" data-lang="es">sectores: minería,<br>energía, manufactura…</div><div class="team-hl-lbl" data-lang="en">sectors: mining,<br>energy, manufacturing…</div></div>
+  </header>
+
+  <!-- EL PROBLEMA -->
+  <section id="problema">
+    <div class="section">
+      <div class="problema-header">
+        <div class="eyebrow eyebrow-gold-line">El problema</div>
+        <h2>El desempeño de su empresa rara vez refleja su potencial real</h2>
+        <p>La mayoría de líderes percibe los síntomas pero no dispone de una medida objetiva de la brecha. Cuantificarla permite enfocar recursos, alinear prioridades y capturar valor de forma sistemática.</p>
+      </div>
+
+      <div class="problema-grid">
+        <div class="problema-card">
+          <div class="problema-icon-box"><i class="ti ti-building-warehouse"></i></div>
+          <div>
+            <h4>Capital de trabajo atrapado</h4>
+            <p>Inventario equivalente a meses de ventas, cobranza lenta y pagos que erosionan caja — sin que nadie lo haya cuantificado.</p>
+          </div>
+        </div>
+        <div class="problema-card">
+          <div class="problema-icon-box"><i class="ti ti-chart-arrows-vertical"></i></div>
+          <div>
+            <h4>Operación que no escala</h4>
+            <p>Crecimiento en ventas que no genera caja proporcional. Los sistemas de gestión no acompañaron el negocio.</p>
+          </div>
+        </div>
+        <div class="problema-card">
+          <div class="problema-icon-box"><i class="ti ti-coin-off"></i></div>
+          <div>
+            <h4>Inversiones sin criterio</h4>
+            <p>ROIC por debajo del costo de capital sin saberlo. Decisiones sin métricas integradas de finanzas y operación.</p>
+          </div>
+        </div>
+        <div class="problema-card">
+          <div class="problema-icon-box"><i class="ti ti-activity"></i></div>
+          <div>
+            <h4>Sin S&amp;OP ni forecast</h4>
+            <p>Compras reactivas, sin planificación de demanda. La operación permanece en modo apaga-incendios.</p>
+          </div>
+        </div>
+        <div class="problema-card">
+          <div class="problema-icon-box"><i class="ti ti-target"></i></div>
+          <div>
+            <h4>Margen que no cierra</h4>
+            <p>Brecha recurrente entre el margen proyectado y el que se cierra al año. Sin causa raíz identificada.</p>
+          </div>
+        </div>
+        <div class="problema-card">
+          <div class="problema-icon-box"><i class="ti ti-topology-star-ring-3"></i></div>
+          <div>
+            <h4>Sin governance ni métricas</h4>
+            <p>Finanzas y operación no hablan el mismo idioma. Decisiones basadas en intuición, no en datos trazables.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="problema-cta">
+        <p>¿Reconoce alguno de estos síntomas? Una conversación de 30 minutos es suficiente para saber si hay una oportunidad real.</p>
+        <a href="#contacto" class="btn-primary"><i class="ti ti-message-circle"></i> Cuénteme su caso →</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- HOW TO START -->
-<section id="empezar">
-  <p class="sec-label" data-lang="es">Cómo empezar</p><p class="sec-label" data-lang="en">How to start</p>
-  <h2 class="sec-title" data-lang="es">Dos formas de dar el primer paso</h2>
-  <h2 class="sec-title" data-lang="en">Two ways to take the first step</h2>
-  <p class="sec-intro" data-lang="es">Sin compromiso. El primer contacto es para identificar si podemos ayudarle — y si no, se lo diremos con la misma claridad.</p>
-  <p class="sec-intro" data-lang="en">No commitment. The first contact is to identify whether we can help — and if not, we'll say so with the same clarity.</p>
-  <div class="start-grid">
-    <div class="start-card">
-      <div class="start-icon">🤝</div>
-      <span class="start-tag" data-lang="es">Gratis · 30 minutos</span>
-      <span class="start-tag" data-lang="en">Free · 30 minutes</span>
-      <div class="start-name" data-lang="es">Reunión de Claridad Directiva</div>
-      <div class="start-name" data-lang="en">Executive Clarity Meeting</div>
-      <p class="start-desc" data-lang="es">Conversación directa con el Socio Director para identificar dónde está la mayor oportunidad de valor en su empresa. Sin presentación — directo al diagnóstico.</p>
-      <p class="start-desc" data-lang="en">Direct conversation with the Managing Partner to identify where the biggest value opportunity lies. No presentation — straight to the diagnosis.</p>
-      <a href="https://bookings.cloud.microsoft/bookwithme/user/18c268b18dcc4351873da0a54e850f25%40rar.pe?anonymous&ismsaljsauthenabled" target="_blank" class="cta-outline">
-        <span data-lang="es">Agendar reunión</span><span data-lang="en">Schedule meeting</span>
-      </a>
-    </div>
-    <div class="start-card feat">
-      <div class="start-icon">⚡</div>
-      <span class="start-tag" data-lang="es">10 días hábiles</span>
-      <span class="start-tag" data-lang="en">10 business days</span>
-      <div class="start-name" data-lang="es">Diagnóstico Relámpago</div>
-      <div class="start-name" data-lang="en">Lightning Diagnostic</div>
-      <p class="start-desc" data-lang="es">Radiografía general de su empresa e identificación de Quick Wins capturables en semanas. Entregable: mapa de oportunidades con impacto estimado y plan de acción priorizado.</p>
-      <p class="start-desc" data-lang="en">Full diagnostic of your company and identification of Quick Wins capturable in weeks. Deliverable: opportunity map with estimated impact and prioritized action plan.</p>
-      <a href="https://bookings.cloud.microsoft/bookwithme/user/18c268b18dcc4351873da0a54e850f25%40rar.pe?anonymous&ismsaljsauthenabled" target="_blank" class="cta-solid">
-        <span data-lang="es">Solicitar diagnóstico</span><span data-lang="en">Request diagnostic</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contacto">
-  <p class="sec-label" data-lang="es">Contacto</p><p class="sec-label" data-lang="en">Contact</p>
-  <h2 class="sec-title" data-lang="es">Conversemos</h2>
-  <h2 class="sec-title" data-lang="en">Let's talk</h2>
-  <div class="contact-wrap">
-    <div class="contact-info">
-      <p data-lang="es">Si su empresa está dejando valor sobre la mesa — en estrategia, operación o inversiones — escríbanos. La primera conversación no tiene costo y le daremos una lectura honesta de dónde está la oportunidad.</p>
-      <p data-lang="en">If your company is leaving value on the table — in strategy, operations, or investments — reach out. The first conversation is free and we'll give you an honest read on where the opportunity lies.</p>
-      <div class="contact-detail">
-        <div class="contact-person">Raúl A. Rojas</div>
-        <div class="contact-role" data-lang="es">Socio Director</div>
-        <div class="contact-role" data-lang="en">Managing Partner</div>
+  <!-- COMO TRABAJAMOS -->
+  <section id="como">
+    <div class="como-inner">
+      <div class="como-header">
+        <div class="eyebrow eyebrow-gold-line">Cómo trabajamos</div>
+        <h2>Un diagnóstico preciso, un camino claro para capturar el valor</h2>
+        <p>Construido con la data que el cliente ya tiene: cuantificable, trazable, con perspectiva de dueño del negocio.</p>
       </div>
-      <div class="contact-detail">
-        <a href="mailto:contacto@rar.pe">📧 contacto@rar.pe</a>
-        <a href="tel:+51983894157">📞 +51 983 894 157</a>
-        <a href="https://www.linkedin.com/in/raulrojasrenteria" target="_blank">💼 LinkedIn ↗</a>
-        <a href="https://bookings.cloud.microsoft/bookwithme/user/18c268b18dcc4351873da0a54e850f25%40rar.pe?anonymous&ismsaljsauthenabled" target="_blank" style="color:var(--gold);font-weight:700;">
-          <span data-lang="es">→ Agendar directamente</span><span data-lang="en">→ Schedule directly</span>
-        </a>
+
+      <div class="como-grid">
+        <div class="fase-card fase-1">
+          <div class="fase-number">01</div>
+          <div class="fase-icon"><i class="ti ti-database-search"></i></div>
+          <h3>Análisis de datos</h3>
+          <ul class="fase-list">
+            <li>Foco en lo que genera valor</li>
+            <li>Perspectiva de dueño del negocio</li>
+            <li>Data existente, cuantificable y trazable</li>
+            <li>Sin encuestas ni talleres interminables</li>
+          </ul>
+        </div>
+        <div class="fase-card fase-2">
+          <div class="fase-number">02</div>
+          <div class="fase-icon"><i class="ti ti-chart-dots-3"></i></div>
+          <h3>Cuantificación de la brecha</h3>
+          <ul class="fase-list">
+            <li>Benchmarks internos y externos</li>
+            <li>Brecha agrupada en palancas de acción</li>
+            <li>Priorización por impacto y viabilidad</li>
+            <li>Impacto expresado en monto y plazo</li>
+          </ul>
+        </div>
+        <div class="fase-card fase-3">
+          <div class="fase-number">03</div>
+          <div class="fase-icon"><i class="ti ti-map-2"></i></div>
+          <h3>Plan de implementación</h3>
+          <ul class="fase-list">
+            <li>Opciones estratégicas según objetivo</li>
+            <li>"Optimizamos un área específica"</li>
+            <li>"Transformación del negocio"</li>
+            <li>"Preparamos la empresa para venta", entre otras</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="como-cta">
+        <a href="https://bookings.cloud.microsoft/bookwithme/user/18c268b18dcc4351873da0a54e850f25%40rar.pe?anonymous&ismsaljsauthenabled" class="btn-outline-dark" target="_blank" rel="noopener"><i class="ti ti-calendar"></i> Agendar diagnóstico relámpago →</a>
       </div>
     </div>
-    <form class="contact-form" onsubmit="sendContact(event)">
-      <input type="text" id="cf-name" placeholder="Nombre y empresa / Name and company" required/>
-      <input type="email" id="cf-email" placeholder="Email" required/>
-      <textarea id="cf-msg" placeholder="¿En qué podemos ayudarle? / How can we help?" required></textarea>
-      <button type="submit"><span data-lang="es">Enviar mensaje</span><span data-lang="en">Send message</span></button>
-    </form>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-  <span class="footer-logo">RAR</span>
-  <span class="footer-copy">© 2025 RAR Transformación Estratégica · Lima, Perú</span>
-  <span class="footer-loc" data-lang="es">Operaciones en LatAm · contacto@rar.pe</span>
-  <span class="footer-loc" data-lang="en">Operations across LatAm · contacto@rar.pe</span>
-</footer>
+  <!-- EVIDENCIA -->
+  <section id="evidencia">
+    <div class="section">
+      <div class="evidencia-header">
+        <div class="eyebrow eyebrow-gold-line">Nuestra evidencia</div>
+        <h2>Capacidad demostrada de análisis y resultados</h2>
+        <p>Casos reales. En todos, los datos ya existían pero necesitaban ordenarse y priorizarse para poder visualizar la problemática con total claridad.</p>
+      </div>
 
-<script>
-  function setLang(l){
-    document.body.className='lang-'+l;
-    document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.textContent.toLowerCase()===l));
-  }
-  function sendContact(e){
-    e.preventDefault();
-    const n=document.getElementById('cf-name').value,
-          m=document.getElementById('cf-email').value,
-          t=document.getElementById('cf-msg').value;
-    window.location.href='mailto:contacto@rar.pe?subject='
-      +encodeURIComponent('Contacto RAR TE — '+n)
-      +'&body='+encodeURIComponent('Nombre/empresa: '+n+'\nEmail: '+m+'\n\nMensaje:\n'+t);
-  }
-</script>
+      <div class="evidencia-cards">
+        <div class="evidencia-card">
+          <div class="ev-content">
+            <div class="ev-badge"><i class="ti ti-check"></i> Diagnóstico + Implementación</div>
+            <div class="ev-sector">Servicios Financieros</div>
+            <h3>Organización de préstamos educativos</h3>
+            <ul class="ev-hallazgos">
+              <li>Necesidad de una mejor comunicación de la propuesta de valor </li>
+              <li>Oportunidad de mejora en el performance financiero y en el impacto de rentabilidad por línea de negocio</li>
+              <li>Equipo comercial con potencial de optimización en su sistema de gestión</li>
+            </ul>
+            <a href="#contacto" class="btn-text"><i class="ti ti-arrow-right"></i> Quiero resultados similares</a>
+          </div>
+          <div class="ev-metrics">
+            <div class="ev-metric-block">
+              <div class="ev-metric-number" data-counter data-prefix="USD " data-count="140" data-suffix="K">USD 140K</div>
+              <div class="ev-metric-label">Meta del roadmap comercial diseñado e implementado</div>
+            </div>
+            <div class="ev-metric-block">
+              <div class="ev-metric-number">Nueva PdV</div>
+              <div class="ev-metric-label">Propuesta de valor redefinida y operando</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="evidencia-card">
+          <div class="ev-content">
+            <div class="ev-badge"><i class="ti ti-check"></i> Diagnóstico de valor</div>
+            <div class="ev-sector">Distribución industrial · Lima</div>
+            <h3>Distribuidora de insumos intermedios</h3>
+            <ul class="ev-hallazgos">
+              <li>Inventario con poca rotación </li>
+              <li>Oportunidad de mejora en su gestión de planeamiento de producción y ventas</li>
+              <li>Poco retorno de capital de trabajo invetido</li>
+            </ul>
+            <a href="#contacto" class="btn-text"><i class="ti ti-arrow-right"></i> Quiero resultados similares</a>
+          </div>
+          <div class="ev-metrics">
+            <div class="ev-metric-block">
+              <div class="ev-metric-number" data-counter data-prefix="USD " data-count="1" data-suffix="M">USD 1M</div>
+              <div class="ev-metric-label">Impacto identificado en el primer año</div>
+            </div>
+            <div class="ev-metric-block">
+              <div class="ev-metric-number" data-counter data-prefix="USD " data-count="2.9" data-suffix="M" data-decimals="1">USD 2.9M</div>
+              <div class="ev-metric-label">Aumento en el valor de la empresa</div>
+            </div>
+            <div class="ev-metric-block">
+              <div class="ev-metric-number" data-counter data-prefix="+USD " data-count="400" data-suffix="K">+USD 400K</div>
+              <div class="ev-metric-label">Impacto recurrente anual verificado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="contacto-inner">
+      <div class="contacto-top">
+        <div class="contacto-header">
+          <div class="eyebrow eyebrow-gold">Conversemos</div>
+          <h2>Una conversación de 30 minutos es suficiente para saber si hay una oportunidad real</h2>
+          <p class="contacto-sub">Si la hay, iniciamos con un diagnóstico relámpago sobre el problema que más le está costando dinero hoy.</p>
+        </div>
+
+        <div class="booking-block">
+          <div class="booking-qr-wrap">
+            <img src="assets/img/qr-booking.png" alt="QR para agendar reunión">
+            <span>Escanea desde tu celular</span>
+          </div>
+          <div class="booking-sep">o</div>
+          <div class="booking-cta">
+            <p class="booking-cta-label">Agenda en el calendario</p>
+            <a href="https://bookings.cloud.microsoft/bookwithme/user/18c268b18dcc4351873da0a54e850f25%40rar.pe?anonymous&ismsaljsauthenabled" class="btn-gold" target="_blank" rel="noopener"><i class="ti ti-calendar"></i> Agendar reunión →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pasos-grid">
+        <div class="paso">
+          <div class="paso-num">01</div>
+          <div class="paso-icon"><i class="ti ti-message-circle"></i></div>
+          <h4>Conversación inicial</h4>
+          <p>Cuénteme qué problema le está costando dinero hoy. Sin presentaciones previas, sin compromisos.</p>
+        </div>
+        <div class="paso">
+          <div class="paso-num">02</div>
+          <div class="paso-icon"><i class="ti ti-zoom-scan"></i></div>
+          <h4>Diagnóstico relámpago</h4>
+          <p>Cuantificamos el problema y proponemos un plan con su data, expresado en USD reales.</p>
+        </div>
+        <div class="paso">
+          <div class="paso-num">03</div>
+          <div class="paso-icon"><i class="ti ti-circle-check"></i></div>
+          <h4>Decisión informada</h4>
+          <p>Usted decide con números reales los siguientes pasos. Sin presión, sin propuestas genéricas.</p>
+        </div>
+      </div>
+
+      <div class="contact-bar">
+        <div class="contact-avatar">
+          <img src="assets/img/raul-rojas.jpg" alt="Raúl A. Rojas">
+        </div>
+        <div class="contact-info">
+          <div class="contact-name">Raúl A. Rojas</div>
+          <div class="contact-role">Socio Director · RAR Transformación Estratégica</div>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:contacto@rar.pe">contacto@rar.pe</a>
+          <a href="tel:+51983894157">+51 983 894 157</a>
+        </div>
+        <div class="contact-btns">
+          <a href="mailto:contacto@rar.pe" class="btn-gold"><i class="ti ti-mail"></i> Escribir ahora</a>
+          <a href="tel:+51983894157" class="btn-outline-white"><i class="ti ti-phone"></i> Llamar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <span class="footer-logo-rar">RAR</span>
+      <span class="footer-logo-sub">Transformación Estratégica</span>
+    </div>
+    <p class="footer-copy">© 2026 RAR TE · Lima, Perú · contacto@rar.pe</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
